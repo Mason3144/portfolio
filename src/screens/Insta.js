@@ -13,7 +13,7 @@ const Span = styled.span`
   border-radius: 4px;
 `;
 const Div = styled.div`
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 `;
 const Img = styled.img`
   margin-left: 15px;
@@ -33,20 +33,20 @@ export default function Insta() {
         <Container>
           <Div>
             <h3>Backend</h3>
-            <span>
+            <P>
               Node.js, Apollo, Graphql, Postgre, Prisma, Typescript를 이용하여
               백엔드 및 DB구축
-            </span>
+            </P>
           </Div>
           <Div>
             <h3>Frontend</h3>
-            <span>
+            <P>
               React native, Expo, Apollo client를 이용하여 프론트엔드 서버 구축
-            </span>
+            </P>
           </Div>
           <Div>
             <h3>Features</h3>
-            <P>User, Photo, Comments의 CRUD서비스 </P>
+            <P>User, Photo, Comment의 CRUD서비스 </P>
             <P>Token을 이용하여 User authentication 구현 </P>
             <P>Websocket server를 이용한 direct Message</P>
             <P>AWS S3를 이용하여 파일 업로드 Heroku와 Expo를 이용하여 배포</P>
