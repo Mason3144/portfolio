@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Layout } from "./components";
 import Header from "./Header";
 import QRcode from "../assets/InstaCloneQR.png";
-import { Link } from "react-router-dom";
 
 const BigContainer = styled.div``;
 const Container = styled.div``;
@@ -44,6 +43,7 @@ export default function Insta() {
             <a
               href={"https://github.com/Mason3144/insta-clone-backend"}
               target="_blank"
+              rel="noreferrer"
             >
               <GitSpan>
                 https://github.com/Mason3144/insta-clone-backend
@@ -58,6 +58,7 @@ export default function Insta() {
             <a
               href={"https://github.com/Mason3144/insta-clone-backend"}
               target="_blank"
+              rel="noreferrer"
             >
               <GitSpan>
                 https://github.com/Mason3144/insta-clone-frontend
