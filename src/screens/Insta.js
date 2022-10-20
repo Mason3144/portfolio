@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import { Layout } from "./components";
 import Header from "./Header";
-import QRcode from "../assets/InstaCloneQR.png";
+import QRcode from "../assets/instaClone/InstaCloneQR.png";
+import welcome from "../assets/instaClone/welcome.jpg";
+import signUp from "../assets/instaClone/signUp.jpg";
+import feed from "../assets/instaClone/feed.jpg";
+import aChat from "../assets/instaClone/aChat.jpg";
 
 const BigContainer = styled.div``;
 const Container = styled.div``;
@@ -17,6 +21,9 @@ const Div = styled.div`
 `;
 const Img = styled.img`
   margin-left: 15px;
+`;
+const Screenshots = styled.img`
+  padding: 10px;
 `;
 const P = styled.p``;
 const GitSpan = styled.span`
@@ -95,6 +102,15 @@ export default function Insta() {
             Photo업로드, Direct Message, Profile변경 등 많은 기능들을
             이용해주세요.
           </P>
+        </Container>
+      </Layout>
+      <Layout>
+        <Container>
+          <h3>Screenshots</h3>
+          <Screenshots src={welcome} width="200" height="400"></Screenshots>
+          <Screenshots src={signUp} width="200" height="400"></Screenshots>
+          <Screenshots src={feed} width="200" height="400"></Screenshots>
+          <Screenshots src={aChat} width="200" height="400"></Screenshots>
         </Container>
       </Layout>
     </BigContainer>
