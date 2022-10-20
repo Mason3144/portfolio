@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Layout } from "./components";
 import Header from "./Header";
 import QRcode from "../assets/InstaCloneQR.png";
+import { Link } from "react-router-dom";
 
 const BigContainer = styled.div``;
 const Container = styled.div``;
@@ -19,6 +20,9 @@ const Img = styled.img`
   margin-left: 15px;
 `;
 const P = styled.p``;
+const GitSpan = styled.span`
+  margin-left: 15px;
+`;
 
 export default function Insta() {
   return (
@@ -37,12 +41,28 @@ export default function Insta() {
               Node.js, Apollo, Graphql, Postgre, Prisma, Typescript를 이용하여
               백엔드 및 DB구축
             </P>
+            <a
+              href={"https://github.com/Mason3144/insta-clone-backend"}
+              target="_blank"
+            >
+              <GitSpan>
+                https://github.com/Mason3144/insta-clone-backend
+              </GitSpan>
+            </a>
           </Div>
           <Div>
             <h3>Frontend</h3>
             <P>
               React native, Expo, Apollo client를 이용하여 프론트엔드 서버 구축
             </P>
+            <a
+              href={"https://github.com/Mason3144/insta-clone-backend"}
+              target="_blank"
+            >
+              <GitSpan>
+                https://github.com/Mason3144/insta-clone-frontend
+              </GitSpan>
+            </a>
           </Div>
           <Div>
             <h3>Features</h3>
@@ -56,10 +76,13 @@ export default function Insta() {
       <Layout>
         <Container>
           <h3>Instruction</h3>
-          <P>1) App store에서 "Expo go"를 설치해주세요(IOS 전용)</P>
-          <P>2-1) 카메라를 이용하여 아래의 QR코드를 스캔해주시거나</P>
+          <P>1) App store에서 "Expo go"를 설치해주세요(IOS 전용).</P>
+          <P>2) "Expo go"의 테스터 계정으로 로그인해주세요.</P>
+          <Span>Username: test.acc</Span>
+          <Span>Password: wg2BTVhRxW</Span>
+          <P>3-1) 카메라를 이용하여 아래의 QR코드를 스캔해주시거나</P>
           <Img src={QRcode} width="200" />
-          <P>2-2) 아래의 링크를 이용해 주세요</P>
+          <P>3-2) 아래의 링크를 이용해 주세요</P>
           <Span>
             exp://exp.host/@x121212/insta-clone-native?release-channel=default
           </Span>
