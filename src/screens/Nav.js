@@ -12,7 +12,7 @@ const NavBox = styled.div`
   /* padding: 20px; */
   position: fixed;
   top: 20%;
-  left: 20%;
+  left: 15%;
   background-color: rgb(34, 34, 34);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -21,6 +21,7 @@ const NavBox = styled.div`
   align-items: center;
   flex-direction: column;
   display: flex;
+  width: 60px;
 `;
 const Layer = styled.div`
   width: 100%;

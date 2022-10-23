@@ -24,10 +24,58 @@ const TitleDiv = styled.div`
   display: flex;
   align-items: center;
 `;
+const DetailNav = styled.div`
+  position: fixed;
+  top: 20%;
+  right: 12%;
+  background-color: rgb(34, 34, 34);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  color: white;
+`;
+const DetailLink = styled.a`
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+`;
+const Layer = styled.div`
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 5px 0 5px 0;
+`;
+const Details = styled.span`
+  font-size: 20px;
+  margin: 10px;
+`;
 
 export default function InstaDetails() {
   return (
     <DetailsLayout>
+      <DetailNav>
+        <Details>Details</Details>
+        <Layer />
+        <DetailLink href="#유저생성">유저생성</DetailLink>
+        <DetailLink href="#로그인">로그인</DetailLink>
+        <DetailLink href="#유저인증">유저인증</DetailLink>
+        <DetailLink href="#Express server(GraphQl upload를 위한) 설정">
+          Express
+        </DetailLink>
+        <DetailLink href="#Profile 변경(AWS S3를 이용한 파일 업로드)">
+          Profile
+        </DetailLink>
+        <DetailLink href="#유저 찾기(cursor pagination)">유저찾기</DetailLink>
+        <DetailLink href="#Comment (offset pagination)">Comment</DetailLink>
+        <DetailLink href="#Follow">Follow</DetailLink>
+        <DetailLink href="#Subscriptions(실시간 업데이트 서버)">
+          Subscriptions
+        </DetailLink>
+        <DetailLink href="#실시간 채팅">실시간 채팅</DetailLink>
+      </DetailNav>
       <div>
         <TitleDiv>
           <H3>Details</H3>
@@ -37,7 +85,7 @@ export default function InstaDetails() {
         </TitleDiv>
 
         <ContentsForm
-          title="유저 생성"
+          title="유저생성"
           url1={
             "https://github.com/Mason3144/insta-clone-backend/blob/master/src/users/createAccount/createAccount.resolvers.ts"
           }
