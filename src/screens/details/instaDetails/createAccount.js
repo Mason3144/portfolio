@@ -46,7 +46,7 @@ const resolvers: Resolvers = {
 
         const newUser = await client.user.create({
           data: { firstName, lastName, username, email, password: hash },
-        }); //사용자 생성
+        }); //모든 조건 충족시 사용자 생성
         
 
         // 밑의 코드는 사용자가 계정생성시 마스터계정과 자동 팔로우 되도록하였습니다.

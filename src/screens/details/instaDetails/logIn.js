@@ -21,7 +21,7 @@ const resolvers: Resolvers = {
 
       const token = await jwt.sign({ id: user.id }, process.env.SECRET_KEY);
       return { ok: true, token };
-      //암호가 일치한다면 json web token을 이용하여 토큰을 생성후 발행
+      //암호가 일치한다면 json web token과 사용자id(고유식별자)를 이용하여 토큰을 생성후 발행
       //이후 사용자 기기의 localStorage에 token저장
     },
   },
