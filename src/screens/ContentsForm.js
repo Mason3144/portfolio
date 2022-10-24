@@ -33,7 +33,9 @@ export default function ContentsForm({
   `;
   return (
     <Contents>
-      <a name={title} />
+      <a name={title} href>
+        {" "}
+      </a>
       <H5>{title}</H5>
       <a href={url1}>
         <GitLink>
