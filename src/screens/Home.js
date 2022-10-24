@@ -25,14 +25,14 @@ export default function Home() {
         <Layout>
           <Container>
             <Link to={"/instagram-clone"} style={{ textDecoration: "none" }}>
-              <H2>Instagram clone coding (IOS)</H2>
+              <H2>Instagram clone coding (Fullstack, IOS)</H2>
             </Link>
           </Container>
         </Layout>
         <Layout>
           <Container>
-            <Link to={"/instagram-clone"} style={{ textDecoration: "none" }}>
-              <H2>Instagram clone coding (IOS)</H2>
+            <Link to={"/youtube-clone"} style={{ textDecoration: "none" }}>
+              <H2>Youtube clone coding (Backend)</H2>
             </Link>
           </Container>
         </Layout>

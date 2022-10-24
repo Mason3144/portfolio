@@ -1,10 +1,1 @@
-## nav bar
-
-클릭시 해당주소로 이동
-해당주소에 도착시 details의 각항목이펼채지고 펼쳐진항목 클릭시 이동
-ex)
-details
-유저생성
-로그인
-유저인증
-...
+## youtube details

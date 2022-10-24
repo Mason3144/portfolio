@@ -15,7 +15,7 @@ export const Subscription =
 
   const serverCleanup = useServer(
     {
-      schema, // GraphQLSchema를 이용하여 resolver와 schema파일들 통합후 관리필요
+      schema, // makeExecutableSchema를 이용하여 resolver와 schema파일들 통합후 관리필요
 
       context: async ({ connectionParams }) => {
         // websocket에는 request나 response가 없기에 ws서버에서 request를 받기위해 설정

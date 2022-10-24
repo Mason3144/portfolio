@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import Home from "./screens/Home";
 import Insta from "./screens/Insta";
 import reset from "styled-reset";
+import Youtube from "./screens/Youtube";
 
 const GlobalStyles = createGlobalStyle`
 ${reset}
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/instagram-clone" element={<Insta />}></Route>
+        <Route path="/youtube-clone" element={<Youtube />}></Route>
       </Routes>
     </Router>
   );

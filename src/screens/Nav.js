@@ -46,11 +46,13 @@ export default function Nav() {
           style={{ fontSize: 40, margin: 10 }}
         />
       </Link>
-      <FontAwesomeIcon
-        icon={faYoutubeSquare}
-        color="white"
-        style={{ fontSize: 40, margin: 10 }}
-      />
+      <Link to={"/youtube-clone"}>
+        <FontAwesomeIcon
+          icon={faYoutubeSquare}
+          color="white"
+          style={{ fontSize: 40, margin: 10 }}
+        />
+      </Link>
     </NavBox>
   );
 }

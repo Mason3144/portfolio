@@ -11,6 +11,7 @@ export default function ContentsForm({
   text1,
   text2,
   text3,
+  capture1,
 }) {
   const H5 = styled.h5`
     font-size: 30px;
@@ -23,8 +24,13 @@ export default function ContentsForm({
   const Contents = styled.div`
     margin-bottom: 50px;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
   `;
-
+  const Img = styled.img`
+    margin: 0 auto;
+    padding: 10px;
+  `;
   return (
     <Contents>
       <a name={title} />
@@ -47,6 +53,7 @@ export default function ContentsForm({
         wrapLines={true}
         codeBlock
       />
+      {capture1 ? <Img src={capture1} /> : null}
       {text2 && url2 ? (
         <div>
           <br />

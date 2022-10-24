@@ -11,6 +11,8 @@ import Comment from "./instaDetails/Comment";
 import Follow from "./instaDetails/Follow";
 import { PubSub, Subscription } from "./instaDetails/Subscription";
 import { RoomUpdates, SendMessage } from "./instaDetails/Realtime";
+import Model from "./instaDetails/Model";
+import ComputedFiled from "./instaDetails/ComputedField";
 
 const DetailsLayout = styled(Layout)`
   width: 1000px;
@@ -59,6 +61,7 @@ export default function InstaDetails() {
       <DetailNav>
         <Details>Details</Details>
         <Layer />
+        <DetailLink href="#모델생성">모델생성</DetailLink>
         <DetailLink href="#유저생성">유저생성</DetailLink>
         <DetailLink href="#로그인">로그인</DetailLink>
         <DetailLink href="#유저인증">유저인증</DetailLink>
@@ -66,7 +69,7 @@ export default function InstaDetails() {
           Express
         </DetailLink>
         <DetailLink href="#Profile 변경(AWS S3를 이용한 파일 업로드)">
-          Profile
+          Profile(Upload)
         </DetailLink>
         <DetailLink href="#유저 찾기(cursor pagination)">유저찾기</DetailLink>
         <DetailLink href="#Comment (offset pagination)">Comment</DetailLink>
@@ -75,6 +78,7 @@ export default function InstaDetails() {
           Subscriptions
         </DetailLink>
         <DetailLink href="#실시간 채팅">실시간 채팅</DetailLink>
+        <DetailLink href="#유저 Computed Field">Computed Field</DetailLink>
       </DetailNav>
       <div>
         <TitleDiv>
@@ -83,7 +87,13 @@ export default function InstaDetails() {
             (글자수를 최소화하기위해 음씀체를 사용하였습니다. 양해부탁드려요😊)
           </span>
         </TitleDiv>
-
+        <ContentsForm
+          title="모델생성"
+          url1={
+            "https://github.com/Mason3144/insta-clone-backend/blob/master/prisma/schema.prisma"
+          }
+          text1={Model}
+        ></ContentsForm>
         <ContentsForm
           title="유저생성"
           url1={
@@ -176,6 +186,13 @@ export default function InstaDetails() {
             "https://github.com/Mason3144/insta-clone-backend/blob/master/src/messages/roomUpdates/roomUpdates.resolvers.ts"
           }
           text2={RoomUpdates}
+        ></ContentsForm>
+        <ContentsForm
+          title="유저 Computed Field"
+          url1={
+            "https://github.com/Mason3144/insta-clone-backend/blob/master/src/users/users.resolvers.ts"
+          }
+          text1={ComputedFiled}
         ></ContentsForm>
       </div>
     </DetailsLayout>
