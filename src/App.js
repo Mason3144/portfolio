@@ -4,6 +4,7 @@ import Home from "./screens/Home";
 import Insta from "./screens/Insta";
 import reset from "styled-reset";
 import Youtube from "./screens/Youtube";
+import Oop from "./screens/Oop";
 
 const GlobalStyles = createGlobalStyle`
 ${reset}
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/instagram-clone" element={<Insta />}></Route>
         <Route path="/youtube-clone" element={<Youtube />}></Route>
+        <Route path="/oop-practice" element={<Oop />}></Route>
       </Routes>
     </Router>
   );

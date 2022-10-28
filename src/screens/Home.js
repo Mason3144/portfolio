@@ -36,6 +36,13 @@ export default function Home() {
             </Link>
           </Container>
         </Layout>
+        <Layout>
+          <Container>
+            <Link to={"/oop-practice"} style={{ textDecoration: "none" }}>
+              <H2>타입스크립트를 이용한 객체 지향 프로그래밍(연습)</H2>
+            </Link>
+          </Container>
+        </Layout>
       </Contents>
     </BigContainer>
   );

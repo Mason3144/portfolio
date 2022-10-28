@@ -28,6 +28,13 @@ const Layer = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.5);
   margin: 5px 0 5px 0;
 `;
+const Span = styled.span`
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 800;
+  text-decoration: none;
+`;
 export default function Nav() {
   return (
     <NavBox>
@@ -39,19 +46,48 @@ export default function Nav() {
         />
       </Link>
       <Layer />
-      <Link to={"/instagram-clone"}>
-        <FontAwesomeIcon
+      <Link
+        to={"/instagram-clone"}
+        style={{
+          textDecoration: "none",
+          height: 40,
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        {/* <FontAwesomeIcon
           icon={faInstagram}
           color="white"
           style={{ fontSize: 40, margin: 10 }}
-        />
+        /> */}
+        <Span>Instagram</Span>
       </Link>
-      <Link to={"/youtube-clone"}>
-        <FontAwesomeIcon
+      <Link
+        to={"/youtube-clone"}
+        style={{
+          textDecoration: "none",
+          height: 40,
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        {/* <FontAwesomeIcon
           icon={faYoutubeSquare}
           color="white"
           style={{ fontSize: 40, margin: 10 }}
-        />
+        /> */}
+        <Span>You</Span>
+      </Link>
+      <Link
+        to={"/oop-practice"}
+        style={{
+          textDecoration: "none",
+          height: 40,
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Span>TS</Span>
       </Link>
     </NavBox>
   );
