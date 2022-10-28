@@ -1,5 +1,8 @@
 const BlockChain =
-  `import * as crypto from "crypto";
+  `//목적:  블록체인의 블록을 객체로 생성하며 암호화를 이용하여 자동으로 정보 갱신후
+//          블록이 이동할때마다 추가정보 업데이트
+  
+  import * as crypto from "crypto";
 
 interface CalculateHash {
   prevHash: string;

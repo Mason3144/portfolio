@@ -2,6 +2,7 @@ import { Layout } from "../components";
 import styled from "styled-components";
 import ContentsForm from "../ContentsForm";
 import BlockChain from "./typeDetails/blockChain";
+import { managerTicket, passengerTicket } from "./typeDetails/trainTicket";
 
 const DetailsLayout = styled(Layout)`
   width: 1000px;
@@ -51,6 +52,9 @@ export default function TypeDetails() {
         <Details>Details</Details>
         <Layer />
         <DetailLink href="#간단한 블록체인 기능 구현">블록체인</DetailLink>
+        <DetailLink href="#자동 기차 승차권 판매 기능 구현">
+          승차권발급
+        </DetailLink>
       </DetailNav>
       <div>
         <TitleDiv>
@@ -61,8 +65,21 @@ export default function TypeDetails() {
         </TitleDiv>
         <ContentsForm
           title="간단한 블록체인 기능 구현"
-          url1={"https://github.com/Mason3144/typescript-practice"}
+          url1={
+            "https://github.com/Mason3144/typescript-practice/blob/master/src/blockchain.ts"
+          }
           text1={BlockChain}
+        ></ContentsForm>
+        <ContentsForm
+          title="자동 기차 승차권 판매 기능 구현"
+          url1={
+            "https://github.com/Mason3144/typescript-practice/blob/master/src/trainTickets.ts"
+          }
+          text1={managerTicket}
+          url2={
+            "https://github.com/Mason3144/typescript-practice/blob/master/src/trainTickets.ts"
+          }
+          text2={passengerTicket}
         ></ContentsForm>
       </div>
     </DetailsLayout>

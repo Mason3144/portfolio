@@ -60,7 +60,7 @@ export default function Nav() {
           color="white"
           style={{ fontSize: 40, margin: 10 }}
         /> */}
-        <Span>Instagram</Span>
+        <Span>Insta</Span>
       </Link>
       <Link
         to={"/youtube-clone"}
