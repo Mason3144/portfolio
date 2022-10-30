@@ -68,6 +68,7 @@ export default function Oop() {
             </Div>
             <Div>
               <H3>Features</H3>
+              <P>Kiosk 기능 구현</P>
               <P>간단한 블록체인 기능 구현</P>
               <P>자동 기차 승차권 판매 기능 구현</P>
             </Div>

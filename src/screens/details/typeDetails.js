@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ContentsForm from "../ContentsForm";
 import BlockChain from "./typeDetails/blockChain";
 import { managerTicket, passengerTicket } from "./typeDetails/trainTicket";
+import { Customer, Manager } from "./typeDetails/kiosk";
 
 const DetailsLayout = styled(Layout)`
   width: 1000px;
@@ -51,6 +52,7 @@ export default function TypeDetails() {
       <DetailNav>
         <Details>Details</Details>
         <Layer />
+        <DetailLink href="#Kiosk 기능구현">Kiosk</DetailLink>
         <DetailLink href="#간단한 블록체인 기능 구현">블록체인</DetailLink>
         <DetailLink href="#자동 기차 승차권 판매 기능 구현">
           승차권발급
@@ -63,6 +65,17 @@ export default function TypeDetails() {
             (글자수를 최소화하기위해 음씀체를 사용하였습니다. 양해부탁드려요😊)
           </span>
         </TitleDiv>
+        <ContentsForm
+          title="Kiosk 기능구현"
+          url1={
+            "https://github.com/Mason3144/typescript-practice/blob/master/src/kiosk.ts"
+          }
+          text1={Manager}
+          url2={
+            "https://github.com/Mason3144/typescript-practice/blob/master/src/kiosk.ts"
+          }
+          text2={Customer}
+        ></ContentsForm>
         <ContentsForm
           title="간단한 블록체인 기능 구현"
           url1={
