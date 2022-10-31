@@ -31,8 +31,15 @@ export default function Home() {
         </Layout>
         <Layout>
           <Container>
-            <Link to={"/youtube-clone"} style={{ textDecoration: "none" }}>
-              <H2>Youtube clone coding (Backend)</H2>
+            <Link to={"/youtube-graphql"} style={{ textDecoration: "none" }}>
+              <H2>Youtube clone coding (Backend, GraphQL)</H2>
+            </Link>
+          </Container>
+        </Layout>
+        <Layout>
+          <Container>
+            <Link to={"/youtube-restful"} style={{ textDecoration: "none" }}>
+              <H2>Youtube clone coding (Backend, Restful)</H2>
             </Link>
           </Container>
         </Layout>

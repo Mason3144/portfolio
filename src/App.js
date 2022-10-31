@@ -5,6 +5,7 @@ import Insta from "./screens/Insta";
 import reset from "styled-reset";
 import Youtube from "./screens/Youtube";
 import Oop from "./screens/Oop";
+import YouRestful from "./screens/You-restful";
 
 const GlobalStyles = createGlobalStyle`
 ${reset}
@@ -19,7 +20,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/instagram-clone" element={<Insta />}></Route>
-        <Route path="/youtube-clone" element={<Youtube />}></Route>
+        <Route path="/youtube-graphql" element={<Youtube />}></Route>
+        <Route path="/youtube-restful" element={<YouRestful />}></Route>
         <Route path="/oop-practice" element={<Oop />}></Route>
       </Routes>
     </Router>

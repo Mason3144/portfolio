@@ -21,19 +21,29 @@ const NavBox = styled.div`
   align-items: center;
   flex-direction: column;
   display: flex;
-  width: 60px;
+  /* width: 60px; */
 `;
 const Layer = styled.div`
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.5);
   margin: 5px 0 5px 0;
 `;
-const Span = styled.span`
+const H3 = styled.h3`
   color: white;
   font-size: 20px;
   text-align: center;
   font-weight: 800;
   text-decoration: none;
+`;
+const Span = styled.span`
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  text-align: center;
+`;
+const Div = styled.div`
+  margin-top: 10px;
+  margin-bottom: 10px;
 `;
 export default function Nav() {
   return (
@@ -50,44 +60,53 @@ export default function Nav() {
         to={"/instagram-clone"}
         style={{
           textDecoration: "none",
-          height: 40,
           display: "flex",
           alignItems: "center",
         }}
       >
-        {/* <FontAwesomeIcon
-          icon={faInstagram}
-          color="white"
-          style={{ fontSize: 40, margin: 10 }}
-        /> */}
-        <Span>Insta</Span>
+        <Div>
+          <H3>Insta</H3>
+          <Span>Fullstack</Span>
+        </Div>
       </Link>
       <Link
-        to={"/youtube-clone"}
+        to={"/youtube-graphql"}
         style={{
           textDecoration: "none",
-          height: 40,
           display: "flex",
           alignItems: "center",
         }}
       >
-        {/* <FontAwesomeIcon
-          icon={faYoutubeSquare}
-          color="white"
-          style={{ fontSize: 40, margin: 10 }}
-        /> */}
-        <Span>You</Span>
+        <Div>
+          <H3>You</H3>
+          <Span>GraphQL</Span>
+        </Div>
+      </Link>
+      <Link
+        to={"/youtube-restful"}
+        style={{
+          textDecoration: "none",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Div>
+          <H3>You</H3>
+          <Span>Restful</Span>
+        </Div>
       </Link>
       <Link
         to={"/oop-practice"}
         style={{
           textDecoration: "none",
-          height: 40,
           display: "flex",
           alignItems: "center",
         }}
       >
-        <Span>TS</Span>
+        <Div>
+          <H3>TS</H3>
+          <Span>OOP</Span>
+        </Div>
       </Link>
     </NavBox>
   );

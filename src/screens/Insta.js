@@ -67,8 +67,8 @@ export default function Insta() {
             <Div>
               <H3>Backend</H3>
               <P>
-                Node.js, Apollo, Graphql, Postgre, Prisma, Typescript를 이용하여
-                백엔드 및 DB구축
+                Node.js, Apollo, Graphql, Postgre, Prisma, Typescript, AWS S3를
+                이용하여 백엔드 및 DB구축
               </P>
               <a
                 href={"https://github.com/Mason3144/insta-clone-backend"}
