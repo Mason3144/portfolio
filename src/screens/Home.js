@@ -34,12 +34,12 @@ const PhotoDiv = styled.div`
 const Div = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 `;
 const GreetingDiv = styled.div``;
 
 const Ul = styled.ul`
-  margin: 25px 0 0 20px;
+  margin: 30px 0 0 20px;
 `;
 const Li = styled.li`
   list-style-type: circle;
@@ -53,7 +53,10 @@ const ContactSpan = styled.span`
   background-color: #f28b85;
   border-radius: 5px;
 `;
-const Span = styled.span``;
+const Span = styled.span`
+  margin-top: 10px;
+  font-size: 18px;
+`;
 const ContactDiv = styled.div`
   margin-top: 10px;
 `;
@@ -116,6 +119,12 @@ export default function Home() {
                   <Span> https://github.com/Mason3144/</Span>
                 </a>
               </ContactDiv>
+            </Div>
+            <H2>Overseas Activity & Language</H2>
+            <Div>
+              <Span>영어-IELTS 6.5</Span>
+              <Span>캐나다 2년거주</Span>
+              <Span>호주 4년거주</Span>
             </Div>
           </Container>
         </Layouts>
