@@ -57,7 +57,22 @@ export default function Nav() {
       </Link>
       <Layer />
       <Link
-        to={"/instagram-clone"}
+        to={"/portfolios"}
+        style={{
+          textDecoration: "none",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Div>
+          <H3>Port</H3>
+          <Span style={{ fontWeight: "bold" }}>folios</Span>
+          {/* <Span style={{ fontWeight: "bold" }}>Portfolios</Span> */}
+        </Div>
+      </Link>
+      <Layer />
+      <Link
+        to={"/portfolios/instagram-clone"}
         style={{
           textDecoration: "none",
           display: "flex",
@@ -70,7 +85,7 @@ export default function Nav() {
         </Div>
       </Link>
       <Link
-        to={"/youtube-graphql"}
+        to={"/portfolios/youtube-graphql"}
         style={{
           textDecoration: "none",
           display: "flex",
@@ -83,7 +98,7 @@ export default function Nav() {
         </Div>
       </Link>
       <Link
-        to={"/youtube-restful"}
+        to={"/portfolios/youtube-restful"}
         style={{
           textDecoration: "none",
           display: "flex",
@@ -96,7 +111,7 @@ export default function Nav() {
         </Div>
       </Link>
       <Link
-        to={"/oop-practice"}
+        to={"/portfolios/oop-practice"}
         style={{
           textDecoration: "none",
           display: "flex",

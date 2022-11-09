@@ -6,6 +6,7 @@ import reset from "styled-reset";
 import Youtube from "./screens/Youtube";
 import Oop from "./screens/Oop";
 import YouRestful from "./screens/You-restful";
+import Portfolios from "./screens/Portfolios";
 
 const GlobalStyles = createGlobalStyle`
 ${reset}
@@ -19,10 +20,14 @@ function App() {
       <GlobalStyles />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/instagram-clone" element={<Insta />}></Route>
-        <Route path="/youtube-graphql" element={<Youtube />}></Route>
-        <Route path="/youtube-restful" element={<YouRestful />}></Route>
-        <Route path="/oop-practice" element={<Oop />}></Route>
+        <Route path="/portfolios" element={<Portfolios />}></Route>
+        <Route path="/portfolios/instagram-clone" element={<Insta />}></Route>
+        <Route path="/portfolios/youtube-graphql" element={<Youtube />}></Route>
+        <Route
+          path="/portfolios/youtube-restful"
+          element={<YouRestful />}
+        ></Route>
+        <Route path="/portfolios/oop-practice" element={<Oop />}></Route>
       </Routes>
     </Router>
   );
