@@ -35,6 +35,7 @@ const H3 = styled.h3`
   font-weight: 800;
   text-decoration: none;
 `;
+
 const Span = styled.span`
   color: white;
   font-size: 13px;
