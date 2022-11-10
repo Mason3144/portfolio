@@ -7,6 +7,7 @@ import Youtube from "./screens/Youtube";
 import Oop from "./screens/Oop";
 import YouRestful from "./screens/You-restful";
 import Portfolios from "./screens/Portfolios";
+import Sql from "./screens/Sql";
 
 const GlobalStyles = createGlobalStyle`
 ${reset}
@@ -28,6 +29,7 @@ function App() {
           element={<YouRestful />}
         ></Route>
         <Route path="/portfolios/oop-practice" element={<Oop />}></Route>
+        <Route path="/portfolios/sql-practice" element={<Sql />}></Route>
       </Routes>
     </Router>
   );

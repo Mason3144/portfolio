@@ -1,3 +1,3 @@
-홈 - 자기소개 - 사진, 3줄소개, 컨택트, 기술스택- 백엔드,DB
-포트폴리오 - 각 포트폴리오의 목적
-project practice
+Group by
+JOIN
+subquery

@@ -93,11 +93,22 @@ export default function Portfolios() {
             style={{ textDecoration: "none" }}
           >
             <Container>
-              <H2>타입스크립트를 이용한 객체 지향 프로그래밍(연습)</H2>
+              <H2>타입스크립트를 이용한 객체 지향 프로그래밍</H2>
               <P>
                 타입스크립트와 함께 객체지향 프로그래밍을 이용하여 <br></br>
                 간단한 코딩 연습
               </P>
+            </Container>
+          </Link>
+        </Layout>
+        <Layout>
+          <Link
+            to={"/portfolios/sql-practice"}
+            style={{ textDecoration: "none" }}
+          >
+            <Container>
+              <H2>SQL Query 문법</H2>
+              <P>ws3school의 SQL Query Editor를 이용한 연습</P>
             </Container>
           </Link>
         </Layout>

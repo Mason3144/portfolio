@@ -124,6 +124,19 @@ export default function Nav() {
           <Span>OOP</Span>
         </Div>
       </Link>
+      <Link
+        to={"/portfolios/sql-practice"}
+        style={{
+          textDecoration: "none",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Div>
+          <H3>SQL</H3>
+          <Span>Query</Span>
+        </Div>
+      </Link>
     </NavBox>
   );
 }
