@@ -44,8 +44,9 @@ export default function Sql() {
               <P>SQL Query</P>
             </Div>
             <Div>
-              <H3>Features</H3>
-              <P>Table 및 Column제어</P>
+              <H3>Details</H3>
+              <P>DDL 데이터 정의어(CREATE, ALTER, DROP)</P>
+              <P>DML 데이터조작어(SELECT,INSERT,UPDATE,DELETE)</P>
             </Div>
           </Container>
         </Layout>
