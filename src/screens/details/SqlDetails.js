@@ -1,7 +1,14 @@
 import { Layout } from "../components";
 import styled from "styled-components";
 import { columnControl, tableControl } from "./sqlDetails/ddl";
-import { controlRow, selectRow } from "./sqlDetails/dml";
+import {
+  controlRow,
+  selectRow,
+  join,
+  groupBy,
+  subqueryInlineview,
+  subqueryNested,
+} from "./sqlDetails/dml";
 import SqlForm from "../SqlForm";
 
 const DetailsLayout = styled(Layout)`
@@ -74,6 +81,10 @@ export default function SqlDetails() {
           title="DML(Data Manipulation Language) 데이터 조작어"
           text1={controlRow}
           text2={selectRow}
+          text3={join}
+          text4={groupBy}
+          text5={subqueryNested}
+          text6={subqueryInlineview}
         ></SqlForm>
       </div>
     </DetailsLayout>

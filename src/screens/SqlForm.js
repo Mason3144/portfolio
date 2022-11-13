@@ -1,7 +1,16 @@
 import { CopyBlock, dracula } from "react-code-blocks";
 import styled from "styled-components";
 
-export default function SqlForm({ title, text1, text2, text3 }) {
+export default function SqlForm({
+  title,
+  text1,
+  text2,
+  text3,
+  text4,
+  text5,
+  text6,
+  text7,
+}) {
   const H5 = styled.h5`
     font-size: 30px;
   `;
@@ -49,6 +58,58 @@ export default function SqlForm({ title, text1, text2, text3 }) {
           <CopyBlock
             language={"sql"}
             text={text3}
+            showLineNumbers={false}
+            theme={dracula}
+            wrapLines={true}
+            codeBlock
+          />
+        </div>
+      ) : null}
+      {text4 ? (
+        <div>
+          <br />
+          <CopyBlock
+            language={"sql"}
+            text={text4}
+            showLineNumbers={false}
+            theme={dracula}
+            wrapLines={true}
+            codeBlock
+          />
+        </div>
+      ) : null}
+      {text5 ? (
+        <div>
+          <br />
+          <CopyBlock
+            language={"sql"}
+            text={text5}
+            showLineNumbers={false}
+            theme={dracula}
+            wrapLines={true}
+            codeBlock
+          />
+        </div>
+      ) : null}
+      {text6 ? (
+        <div>
+          <br />
+          <CopyBlock
+            language={"sql"}
+            text={text6}
+            showLineNumbers={false}
+            theme={dracula}
+            wrapLines={true}
+            codeBlock
+          />
+        </div>
+      ) : null}
+      {text7 ? (
+        <div>
+          <br />
+          <CopyBlock
+            language={"sql"}
+            text={text7}
             showLineNumbers={false}
             theme={dracula}
             wrapLines={true}
