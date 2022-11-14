@@ -8,6 +8,7 @@ import Oop from "./screens/Oop";
 import YouRestful from "./screens/You-restful";
 import Portfolios from "./screens/Portfolios";
 import Sql from "./screens/Sql";
+import Websocket from "./screens/Websocket";
 
 const GlobalStyles = createGlobalStyle`
 ${reset}
@@ -30,6 +31,7 @@ function App() {
         ></Route>
         <Route path="/portfolios/oop-practice" element={<Oop />}></Route>
         <Route path="/portfolios/sql-practice" element={<Sql />}></Route>
+        <Route path="/portfolios/websocket" element={<Websocket />}></Route>
       </Routes>
     </Router>
   );

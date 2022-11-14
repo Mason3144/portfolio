@@ -137,6 +137,19 @@ export default function Nav() {
           <Span>Query</Span>
         </Div>
       </Link>
+      <Link
+        to={"/portfolios/websocket"}
+        style={{
+          textDecoration: "none",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Div>
+          <H3>WS</H3>
+          <Span>Protocol</Span>
+        </Div>
+      </Link>
     </NavBox>
   );
 }

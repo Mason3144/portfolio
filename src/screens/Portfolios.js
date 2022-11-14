@@ -112,6 +112,17 @@ export default function Portfolios() {
             </Container>
           </Link>
         </Layout>
+        <Layout>
+          <Link to={"/portfolios/websocket"} style={{ textDecoration: "none" }}>
+            <Container>
+              <H2>Ws protocol을 이용한 실시간 채팅</H2>
+              <P>
+                SocketIO를 이용한 websocket서버와 WebRTC를 이용한 <br></br>
+                P2P통신 기능 구현
+              </P>
+            </Container>
+          </Link>
+        </Layout>
       </Contents>
     </BigContainer>
   );
