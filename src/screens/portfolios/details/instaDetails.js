@@ -1,10 +1,10 @@
-import { Layout } from "../components";
+import { Layout } from "../../components/components";
 import styled from "styled-components";
 import createAccount from "./instaDetails/createAccount";
 import logIn from "./instaDetails/logIn";
 import { Authentication, serverConfig } from "./instaDetails/Authentication";
 import { editProfile, typeDefs, upload } from "./instaDetails/EditProfile";
-import ContentsForm from "../ContentsForm";
+import ContentsForm from "../../components/ContentsForm";
 import { UploadSetup } from "./instaDetails/UploadSetup";
 import SearchUser from "./instaDetails/SearchUser";
 import Comment from "./instaDetails/Comment";

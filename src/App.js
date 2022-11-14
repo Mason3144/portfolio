@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import Home from "./screens/Home";
-import Insta from "./screens/Insta";
+import Insta from "./screens/portfolios/Insta";
 import reset from "styled-reset";
-import Youtube from "./screens/Youtube";
-import Oop from "./screens/Oop";
-import YouRestful from "./screens/You-restful";
+import Youtube from "./screens/portfolios/Youtube";
+import Oop from "./screens/portfolios/Oop";
+import YouRestful from "./screens/portfolios/You-restful";
 import Portfolios from "./screens/Portfolios";
-import Sql from "./screens/Sql";
-import Websocket from "./screens/Websocket";
+import Sql from "./screens/portfolios/Sql";
+import Websocket from "./screens/portfolios/Websocket";
 
 const GlobalStyles = createGlobalStyle`
 ${reset}

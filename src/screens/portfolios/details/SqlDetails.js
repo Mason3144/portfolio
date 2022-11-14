@@ -1,4 +1,4 @@
-import { Layout } from "../components";
+import { Layout } from "../../components/components";
 import styled from "styled-components";
 import { columnControl, tableControl } from "./sqlDetails/ddl";
 import {
@@ -9,7 +9,7 @@ import {
   subqueryInlineview,
   subqueryNested,
 } from "./sqlDetails/dml";
-import SqlForm from "../SqlForm";
+import SqlForm from "../../components/SqlForm";
 
 const DetailsLayout = styled(Layout)`
   width: 1000px;

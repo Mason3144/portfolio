@@ -1,13 +1,18 @@
 import styled from "styled-components";
-import { Layout } from "./components";
-import Header from "./Header";
-import Nav from "./Nav";
+import { Layout } from "../components/components";
+import Header from "../components/Header";
+import Nav from "../components/Nav";
+import WsDetails from "../portfolios/details/WsDetails";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import YoutubeDetails from "./details/youtubeDetails";
+const GitSpan = styled.span``;
+const GitLink = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 const BigContainer = styled.div``;
 const Container = styled.div``;
-
 const Div = styled.div`
   margin-bottom: 30px;
 `;
@@ -17,7 +22,7 @@ const P = styled.p`
   line-height: 25px;
   margin: 5px;
 `;
-const GitSpan = styled.span``;
+
 const Contents = styled.div``;
 const H1 = styled.h1`
   font-weight: 600;
@@ -28,12 +33,8 @@ const H3 = styled.h3`
   font-weight: 600;
   margin-bottom: 5px;
 `;
-const GitLink = styled.div`
-  display: flex;
-  align-items: center;
-`;
 
-export default function Youtube() {
+export default function Websocket() {
   return (
     <BigContainer>
       <Header></Header>
@@ -41,19 +42,18 @@ export default function Youtube() {
       <Contents>
         <Layout>
           <Container>
-            <H1>Youtube clone coding</H1>
+            <H1>Websocket을 이용한 실시간 채팅</H1>
           </Container>
         </Layout>
         <Layout>
           <Container>
             <Div>
-              <H3>Backend</H3>
+              <H3>Tech stack</H3>
               <P>
-                Node.js, Apollo, Graphql, Postgre, Prisma, Typescript, AWS S3를
-                이용하여 백엔드 및 DB구축
+                Express, SocketIO, WebRTC를 이용하여 WS서버 및 P2P통신 기능 구현
               </P>
               <a
-                href={"https://github.com/Mason3144/insta-clone-backend"}
+                href={"https://github.com/Mason3144/zoom-clone"}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -63,25 +63,18 @@ export default function Youtube() {
                     color="black"
                     style={{ fontSize: 25, margin: 10 }}
                   />
-                  <GitSpan>
-                    https://github.com/Mason3144/insta-clone-backend
-                  </GitSpan>
+                  <GitSpan>https://github.com/Mason3144/zoom-clone</GitSpan>
                 </GitLink>
               </a>
             </Div>
             <Div>
-              <H3>Features</H3>
-              <P>Prisma를 사용하여 모델생성 및 관계형성</P>
-              <P>Mutation과 Query로 CRUD서비스 구현</P>
-              <P>Google OAuth를 이용하여 소셜 로그인 기능 구현</P>
-              <P>Mailgun을 이용하여 email verification 구현</P>
-              <P>Bcrypt를 사용하여 password 암호화</P>
-              <P>Json web token을 이용하여 유저 인증</P>
-              <P>AWS S3를 이용한 파일업로드 서버</P>
+              <H3>Details</H3>
+              <P>SocketIO의 emit, on, join, to의 활용</P>
+              <P>RTC를 위한 offer, answer, ice candidate의 생성 및 교환</P>
             </Div>
           </Container>
         </Layout>
-        <YoutubeDetails />
+        <WsDetails />
       </Contents>
     </BigContainer>
   );

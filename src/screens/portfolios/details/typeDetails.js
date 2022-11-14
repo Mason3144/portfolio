@@ -1,7 +1,7 @@
-import { Layout } from "../components";
+import { Layout } from "../../components/components";
 import styled from "styled-components";
-import ContentsForm from "../ContentsForm";
-import NoGitForm from "../NoGitForm";
+import ContentsForm from "../../components/ContentsForm";
+import NoGitForm from "../../components/NoGitForm";
 import BlockChain from "./typeDetails/blockChain";
 import { managerTicket, passengerTicket } from "./typeDetails/trainTicket";
 import { Customer, Manager } from "./typeDetails/kiosk";

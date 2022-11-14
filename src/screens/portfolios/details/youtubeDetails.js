@@ -1,13 +1,13 @@
-import { Layout } from "../components";
+import { Layout } from "../../components/components";
 import styled from "styled-components";
-import ContentsForm from "../ContentsForm";
+import ContentsForm from "../../components/ContentsForm";
 import Model from "./youtubeDetails/Model";
 import CreateAccount from "./youtubeDetails/CreateAccount";
 import {
   EmailVerification,
   VerifyEmail,
 } from "./youtubeDetails/EmailVerification";
-import Mailgun from "../../assets/youtubeClone/MailgunCapture.png";
+import Mailgun from "../../../assets/youtubeClone/MailgunCapture.png";
 import GoogleLogin from "./youtubeDetails/GoogleLogin";
 import Login from "./youtubeDetails/Login";
 import {

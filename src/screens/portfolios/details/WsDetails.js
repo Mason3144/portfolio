@@ -1,7 +1,7 @@
-import { Layout } from "../components";
+import { Layout } from "../../components/components";
 import styled from "styled-components";
-import ContentsForm from "../ContentsForm";
-import NoGitForm from "../NoGitForm";
+import ContentsForm from "../../components/ContentsForm";
+import NoGitForm from "../../components/NoGitForm";
 import { frontend, stunServer, wsBackend } from "./wsDetails/Configuration";
 import { offerBack, offerFront } from "./wsDetails/Offer";
 import { iceFront, iceBack } from "./wsDetails/Icecandidate";
@@ -58,7 +58,18 @@ export default function WsDetails() {
       <DetailNav>
         <Details>Details</Details>
         <Layer />
-        <DetailLink href="#Websocket 및 RTC 초기 설정">Basic of OOP</DetailLink>
+        <DetailLink href="#Websocket 및 RTC 초기 설정 그리고 룸 생성 및 참여">
+          초기설정
+        </DetailLink>
+        <DetailLink href="#RTC를 위한 offer 생성 및 전달(호스트 사이드)">
+          RTC offer
+        </DetailLink>
+        <DetailLink href="#RTC를 위한 answer 생성 및 전달(게스트 사이드)">
+          RTC answer
+        </DetailLink>
+        <DetailLink href="#RTC를 위한 ice candidate 생성 및 교환">
+          RTC ice candidate
+        </DetailLink>
       </DetailNav>
       <div>
         <TitleDiv>
@@ -68,7 +79,7 @@ export default function WsDetails() {
           </span>
         </TitleDiv>
         <ContentsForm
-          title="Websocket 및 RTC 초기 설정"
+          title="Websocket 및 RTC 초기 설정 그리고 룸 생성 및 참여"
           url1={
             "https://github.com/Mason3144/zoom-clone/blob/master/src/public/js/app.js"
           }

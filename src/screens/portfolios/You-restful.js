@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { Layout } from "./components";
-import Header from "./Header";
-import Nav from "./Nav";
+import { Layout } from "../components/components";
+import Header from "../components/Header";
+import Nav from "../components/Nav";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import TypeDetails from "./details/typeDetails";
+import YouRestfulDetail from "./details/YouRestfulDetail";
 const BigContainer = styled.div``;
 const Container = styled.div``;
 
@@ -33,7 +33,7 @@ const GitLink = styled.div`
   align-items: center;
 `;
 
-export default function Oop() {
+export default function YouRestful() {
   return (
     <BigContainer>
       <Header></Header>
@@ -41,16 +41,19 @@ export default function Oop() {
       <Contents>
         <Layout>
           <Container>
-            <H1>타입스크립트를 이용한 OOP(연습)</H1>
+            <H1>Youtube clone coding</H1>
           </Container>
         </Layout>
         <Layout>
           <Container>
             <Div>
-              <H3>Tech stack</H3>
-              <P>Typescript</P>
+              <H3>Backend</H3>
+              <P>
+                Node.js, Restful, MongoDB, Mongoose, ES6, AWS S3를 이용하여
+                백엔드 및 DB구축
+              </P>
               <a
-                href={"https://github.com/Mason3144/typescript-practice"}
+                href={"https://github.com/Mason3144/wetube-reloaded"}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -61,21 +64,21 @@ export default function Oop() {
                     style={{ fontSize: 25, margin: 10 }}
                   />
                   <GitSpan>
-                    https://github.com/Mason3144/typescript-practice
+                    https://github.com/Mason3144/wetube-reloaded
                   </GitSpan>
                 </GitLink>
               </a>
             </Div>
             <Div>
-              <H3>Details</H3>
-              <P>기초이론 객체 지향 프로그래밍</P>
-              <P>Kiosk 기능 구현</P>
-              <P>간단한 블록체인 기능 구현</P>
-              <P>자동 기차 승차권 판매 기능 구현</P>
+              <H3>Features</H3>
+              <P>Mongoose를 사용하여 모델생성 및 관계형성</P>
+              <P>Restful API를 이용하여 CRUD서비스 구현</P>
+              <P>AWS S3를 이용하여 비디오 및 유저 사진 업로드</P>
+              <P>Bcrypt를 사용하여 password 암호화</P>
             </Div>
           </Container>
         </Layout>
-        <TypeDetails />
+        <YouRestfulDetail />
       </Contents>
     </BigContainer>
   );

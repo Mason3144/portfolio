@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Layout } from "./components";
-import Header from "./Header";
-import Nav from "./Nav";
-import SqlDetails from "./details/SqlDetails";
+import { Layout } from "../components/components";
+import Header from "../components/Header";
+import Nav from "../components/Nav";
+import SqlDetails from "../portfolios/details/SqlDetails";
 const BigContainer = styled.div``;
 const Container = styled.div``;
 const Div = styled.div`

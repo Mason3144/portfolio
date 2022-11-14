@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Layout } from "./components";
-import Header from "./Header";
+import { Layout } from "./components/components";
+import Header from "./components/Header";
 import { Link } from "react-router-dom";
-import Nav from "./Nav";
+import Nav from "./components/Nav";
 
 const BigContainer = styled.div`
   flex-direction: column;
