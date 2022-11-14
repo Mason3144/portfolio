@@ -133,7 +133,7 @@ export default function Home() {
             <H2>Skills</H2>
             <SkillsDiv>
               <SkillsUl>Backend:</SkillsUl>
-              <SkillsSpan>Node.js</SkillsSpan>,
+              <SkillsSpan>Node.js</SkillsSpan>,<SkillsSpan>Express</SkillsSpan>,
               <SkillsSpan>Typescript</SkillsSpan>
             </SkillsDiv>
             <SkillsDiv>
@@ -148,6 +148,8 @@ export default function Home() {
               <SkillsUl>Frontend:</SkillsUl>
               <SkillsSpan>ES6</SkillsSpan>,<SkillsSpan>React</SkillsSpan>
             </SkillsDiv>
+            <H2>Editor</H2>
+            <Span>VS code, WSL Ubuntu </Span>
           </Container>
         </Layouts>
       </Contents>
