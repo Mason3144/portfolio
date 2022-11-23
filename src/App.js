@@ -9,6 +9,7 @@ import YouRestful from "./screens/portfolios/You-restful";
 import Portfolios from "./screens/Portfolios";
 import Sql from "./screens/portfolios/Sql";
 import Websocket from "./screens/portfolios/Websocket";
+import AwsRest from "./screens/portfolios/AwsRest";
 
 const GlobalStyles = createGlobalStyle`
 ${reset}
@@ -32,6 +33,7 @@ function App() {
         <Route path="/portfolios/oop-practice" element={<Oop />}></Route>
         <Route path="/portfolios/sql-practice" element={<Sql />}></Route>
         <Route path="/portfolios/websocket" element={<Websocket />}></Route>
+        <Route path="/portfolios/awsRest" element={<AwsRest />}></Route>
       </Routes>
     </Router>
   );

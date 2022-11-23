@@ -45,6 +45,9 @@ const Span = styled.span`
 const Div = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 export default function Nav() {
   return (
@@ -108,11 +111,25 @@ export default function Nav() {
       >
         <Div>
           <H3>You</H3>
-          <Span>Restful</Span>
+          <Span>Rest</Span>
         </Div>
       </Link>
       <Link
-        to={"/portfolios/oop-practice"}
+        to={"/portfolios/awsRest"}
+        style={{
+          textDecoration: "none",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        
+        <Div>
+          <H3>AWS</H3>
+          <Span>Rest</Span>
+        </Div>
+      </Link>
+      <Link
+        to={"/portfolios/awsRest"}
         style={{
           textDecoration: "none",
           display: "flex",

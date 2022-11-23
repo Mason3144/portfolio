@@ -141,7 +141,7 @@ export default function Home() {
               <SkillsSpan>GraphQL</SkillsSpan>
             </SkillsDiv>
             <SkillsDiv>
-              <SkillsUl>DB:</SkillsUl> <SkillsSpan>Postigre SQL</SkillsSpan>,
+              <SkillsUl>DB:</SkillsUl><SkillsSpan>Mysql</SkillsSpan> <SkillsSpan>Postigre SQL</SkillsSpan>,
               <SkillsSpan>Prisma</SkillsSpan>
             </SkillsDiv>
             <SkillsDiv>

@@ -80,13 +80,26 @@ export default function Portfolios() {
             <Container>
               <H2>Youtube clone coding (Backend, Restful)</H2>
               <P>
-                REST api를 이용하여 Backend 및 Database서버들을 구축하고
+                REST api를 이용하여 Backend 및 no-SQL DB서버를 구축하고
                 <br></br> AWS를 이용한 비디오 업로드등 다양한 기능들 구현
               </P>
             </Container>
           </Link>
         </Layout>
         <H1>Practice</H1>
+        <Layout>
+          <Link
+            to={"/portfolios/awsRest"}
+            style={{ textDecoration: "none" }}
+          >
+            <Container>
+              <H2>AWS-RDS, EC2, S3를 이용한 REST API 백엔드 서버구축 </H2>
+              <P>
+                AWS 클라우드 서비스와 Mysql 쿼리문을 이용하여<br></br> 제품관리 CRUD API 구축
+              </P>
+            </Container>
+          </Link>
+        </Layout>
         <Layout>
           <Link
             to={"/portfolios/oop-practice"}
