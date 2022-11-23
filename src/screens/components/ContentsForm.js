@@ -8,9 +8,11 @@ export default function ContentsForm({
   url1,
   url2,
   url3,
+  url4,
   text1,
   text2,
   text3,
+  text4,
   capture1,
 }) {
   const H5 = styled.h5`
@@ -95,6 +97,29 @@ export default function ContentsForm({
           <CopyBlock
             language={"typescript"}
             text={text3}
+            showLineNumbers={false}
+            theme={dracula}
+            wrapLines={true}
+            codeBlock
+          />
+        </div>
+      ) : null}
+      {text4 && url4 ? (
+        <div>
+          <br />
+          <a href={url4}>
+            <GitLink>
+              <FontAwesomeIcon
+                icon={faSquareGithub}
+                color="black"
+                style={{ fontSize: 25, margin: 10 }}
+              />
+              <GitSpan>{url4}</GitSpan>
+            </GitLink>
+          </a>
+          <CopyBlock
+            language={"typescript"}
+            text={text4}
             showLineNumbers={false}
             theme={dracula}
             wrapLines={true}
