@@ -73,11 +73,13 @@ const SkillsUl = styled.ul`
   margin-bottom: 10px;
   font-size: 20px;
 `;
+
 export default function Home() {
   return (
     <BigContainer>
       <Header></Header>
       <Nav />
+
       <Contents>
         <Layouts>
           <Container>
@@ -119,6 +121,15 @@ export default function Home() {
                   <Span> https://github.com/Mason3144/</Span>
                 </a>
               </ContactDiv>
+              <ContactDiv>
+                <ContactSpan>Blog:</ContactSpan>
+                <a
+                  href="https://mason-lee.tistory.com/"
+                  style={{ color: "black" }}
+                >
+                  <Span> https://mason-lee.tistory.com/</Span>
+                </a>
+              </ContactDiv>
             </Div>
             <H2>Overseas Activity & Language</H2>
             <Div>
@@ -141,7 +152,9 @@ export default function Home() {
               <SkillsSpan>GraphQL</SkillsSpan>
             </SkillsDiv>
             <SkillsDiv>
-              <SkillsUl>DB:</SkillsUl><SkillsSpan>Mysql</SkillsSpan> <SkillsSpan>Postigre SQL</SkillsSpan>,
+              <SkillsUl>DB:</SkillsUl>
+              <SkillsSpan>Mysql</SkillsSpan>{" "}
+              <SkillsSpan>Postigre SQL</SkillsSpan>,
               <SkillsSpan>Prisma</SkillsSpan>
             </SkillsDiv>
             <SkillsDiv>
