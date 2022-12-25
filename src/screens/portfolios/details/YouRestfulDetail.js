@@ -1,7 +1,6 @@
 import { Layout } from "../../components/components";
 import styled from "styled-components";
 import ContentsForm from "../../components/ContentsForm";
-import Model from "./youtubeDetails/Model";
 import UserModel from "./youRestfulDetails/UserModel";
 import {
   createUserControl,
@@ -76,9 +75,6 @@ export default function YouRestfulDetail() {
       <div>
         <TitleDiv>
           <H3>Details</H3>
-          <span>
-            (글자수를 최소화하기위해 음씀체를 사용하였습니다. 양해부탁드려요😊)
-          </span>
         </TitleDiv>
         <ContentsForm
           title="모델생성"

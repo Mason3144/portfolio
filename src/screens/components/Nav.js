@@ -2,10 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHomeAlt } from "@fortawesome/free-solid-svg-icons";
-import {
-  faInstagram,
-  faYoutubeSquare,
-} from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
 const NavBox = styled.div`
@@ -45,7 +41,7 @@ const Span = styled.span`
 const Div = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
 `;
@@ -72,99 +68,6 @@ export default function Nav() {
           <H3>Port</H3>
           <Span style={{ fontWeight: "bold" }}>folios</Span>
           {/* <Span style={{ fontWeight: "bold" }}>Portfolios</Span> */}
-        </Div>
-      </Link>
-      <Layer />
-      <Link
-        to={"/portfolios/instagram-clone"}
-        style={{
-          textDecoration: "none",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <Div>
-          <H3>Insta</H3>
-          <Span>Fullstack</Span>
-        </Div>
-      </Link>
-      <Link
-        to={"/portfolios/youtube-graphql"}
-        style={{
-          textDecoration: "none",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <Div>
-          <H3>You</H3>
-          <Span>GraphQL</Span>
-        </Div>
-      </Link>
-      <Link
-        to={"/portfolios/youtube-restful"}
-        style={{
-          textDecoration: "none",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <Div>
-          <H3>You</H3>
-          <Span>Rest</Span>
-        </Div>
-      </Link>
-      <Link
-        to={"/portfolios/awsRest"}
-        style={{
-          textDecoration: "none",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        
-        <Div>
-          <H3>AWS</H3>
-          <Span>Rest</Span>
-        </Div>
-      </Link>
-      <Link
-        to={"/portfolios/awsRest"}
-        style={{
-          textDecoration: "none",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <Div>
-          <H3>TS</H3>
-          <Span>OOP</Span>
-        </Div>
-      </Link>
-      <Link
-        to={"/portfolios/sql-practice"}
-        style={{
-          textDecoration: "none",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <Div>
-          <H3>SQL</H3>
-          <Span>Query</Span>
-        </Div>
-      </Link>
-      <Link
-        to={"/portfolios/websocket"}
-        style={{
-          textDecoration: "none",
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        <Div>
-          <H3>WS</H3>
-          <Span>Protocol</Span>
         </Div>
       </Link>
     </NavBox>

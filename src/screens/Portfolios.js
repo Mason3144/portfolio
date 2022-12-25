@@ -40,7 +40,7 @@ export default function Portfolios() {
       <Header></Header>
       <Nav />
       <Contents>
-        <H1>Project</H1>
+        <H1>Portfolio</H1>
 
         <Layout>
           <Link
@@ -82,56 +82,6 @@ export default function Portfolios() {
               <P>
                 REST api를 이용하여 Backend 및 no-SQL DB서버를 구축하고
                 <br></br> AWS를 이용한 비디오 업로드등 다양한 기능들 구현
-              </P>
-            </Container>
-          </Link>
-        </Layout>
-        <H1>Practice</H1>
-        <Layout>
-          <Link
-            to={"/portfolios/awsRest"}
-            style={{ textDecoration: "none" }}
-          >
-            <Container>
-              <H2>AWS-RDS, EC2, S3를 이용한 REST API 백엔드 서버구축 </H2>
-              <P>
-                AWS 클라우드 서비스와 Mysql 쿼리문을 이용하여<br></br> 제품관리 CRUD API 구축
-              </P>
-            </Container>
-          </Link>
-        </Layout>
-        <Layout>
-          <Link
-            to={"/portfolios/oop-practice"}
-            style={{ textDecoration: "none" }}
-          >
-            <Container>
-              <H2>타입스크립트를 이용한 객체 지향 프로그래밍</H2>
-              <P>
-                타입스크립트와 함께 객체지향 프로그래밍을 이용하여 <br></br>
-                간단한 코딩 연습
-              </P>
-            </Container>
-          </Link>
-        </Layout>
-        <Layout>
-          <Link
-            to={"/portfolios/sql-practice"}
-            style={{ textDecoration: "none" }}
-          >
-            <Container>
-              <H2>SQL Query 문법</H2>
-              <P>ws3school의 SQL Query Editor를 이용한 연습</P>
-            </Container>
-          </Link>
-        </Layout>
-        <Layout>
-          <Link to={"/portfolios/websocket"} style={{ textDecoration: "none" }}>
-            <Container>
-              <H2>Ws protocol을 이용한 실시간 채팅 서버</H2>
-              <P>
-                SocketIO를 이용한 websocket서버와 WebRTC를 이용한 <br></br>
-                P2P통신 기능 구현
               </P>
             </Container>
           </Link>
